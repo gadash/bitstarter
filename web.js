@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
 });
 
 var fs = require('fs');
-//var buffer = new Buffer(fs.ReadFileSync('index.html'));
+var buffer = new Buffer(fs.ReadFileSync('index.html'));
 //app.get('/', function(request, response) {
   //response.send(buffer.toString());
 //});  
