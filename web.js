@@ -5,6 +5,7 @@ var buffer = new Buffer(fs.ReadFileSync('index.html'));
 app.use(express.logger());
 
 app.get('/', function(request, response) {
+  response.send('here');
   response.send(buffer.toString());
 });
 
